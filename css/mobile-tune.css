@@ -1,0 +1,73 @@
+/* ONNAFIT mobile tune — final mobile-first density pass */
+.brand-break { padding: 0; }
+.brand-break-grid { display: grid; padding: 0; max-width: none; }
+.brand-break-media img { width: 100%; height: 100%; object-fit: cover; }
+.brand-break-copy { display: flex; flex-direction: column; justify-content: center; background: #e8d58d; }
+.brand-break-copy .eyebrow { color: #725c1d; }
+.brand-break-copy .display-sm { color: #171713; }
+
+@media (min-width: 768px) {
+  .brand-break-grid { grid-template-columns: 1.1fr .9fr; }
+  .brand-break-media { min-height: 470px; }
+  .brand-break-copy { padding: clamp(42px, 6vw, 78px); }
+}
+
+@media (max-width: 767px) {
+  .section { padding: 38px 0; }
+  .display { margin-bottom: 12px; }
+  .thesis-bridge { font-size: 14px; line-height: 1.42; }
+  .thesis-close { font-weight: 700; margin-top: -5px; }
+  #camada .merge-block { margin-top: 24px; }
+  #camada .closing-line { margin-top: 18px; font-size: 18px; }
+
+  .brand-break-grid { margin: 0; }
+  .brand-break-media { height: 390px; }
+  .brand-break-copy { padding: 18px; }
+  .brand-break-copy .display-sm { font-size: 20px; margin: 0; }
+
+  #recorrencia .mobile-secondary { display: none; }
+  #recorrencia .lead.strong { font-size: 14px; line-height: 1.42; max-width: 30em; }
+  .journey-swipe {
+    display: flex; overflow-x: auto; gap: 12px; margin: 16px -18px 0;
+    padding: 0 18px 8px; scroll-snap-type: x mandatory; scrollbar-width: none;
+  }
+  .journey-swipe::-webkit-scrollbar { display: none; }
+  .journey-swipe .journey { flex: 0 0 82%; scroll-snap-align: start; min-height: 210px; }
+  #recorrencia .caption { margin-top: 8px; font-size: 11px; }
+  #recorrencia .swipe-track { margin-top: 14px; }
+  #recorrencia .big-statement { margin-top: 22px; }
+  #recorrencia .big-statement .display { font-size: 24px; }
+  #recorrencia .big-statement .display-sm { font-size: 17px; }
+
+  #produto > .container > .narrow-p { font-size: 13px; margin-bottom: 12px; }
+  .product-grid { display: flex; flex-direction: column; }
+  .product-visual { order: 1; }
+  .features { order: 2; }
+  .video-block .eyebrow { margin-bottom: 4px; }
+  .video-block .display-sm { margin: 0 0 12px; }
+
+  .how-heading { margin-bottom: 12px; }
+  .how-visual { min-height: 300px; }
+  .how-grid { gap: 10px; }
+  .how-grid .steps-4 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .how-grid .step { padding: 10px; }
+  .how-grid .step p { font-size: 11px; line-height: 1.32; }
+  .how-cta { margin-top: 16px; }
+
+  #calculadora > .container > .narrow-p { font-size: 13px; margin-bottom: 10px; }
+  .calc { margin-top: 12px; }
+  .calc-hint.annualized { display: none; }
+  .post-calc { margin-top: 22px; }
+  .post-calc .narrow-p { font-size: 13px; }
+
+  .proof-section .proof-intro { font-size: 13px; margin-bottom: 0; }
+  .proof-card { border: 1px solid rgba(199,170,82,.18); }
+  .proof-card video { background: #050506; }
+  .proof-section .caption { font-size: 10px; opacity: .55; }
+
+  #para-quem .display { font-size: 25px; }
+  #para-quem .fit-not { display: none; }
+  #implementacao .display { font-size: 25px; }
+  #faq .display { font-size: 25px; }
+  #formulario .display { font-size: 28px; }
+}
