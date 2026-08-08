@@ -54,25 +54,48 @@
   const institutionalVideo = $('institutionalVideo');
   const institutionalFallback = $('institutionalFallback');
   if (institutionalVideo && institutionalFallback) {
-    institutionalVideo.addEventListener('error', () => {
+    const swapInstitutional = () => {
       institutionalVideo.hidden = true;
       institutionalFallback.hidden = false;
-    }, { once: true });
+    };
+    institutionalVideo.addEventListener('error', swapInstitutional, { once: true });
+    setTimeout(() => {
+      if (institutionalVideo.readyState === 0) swapInstitutional();
+    }, 4000);
   }
 
   const proofTrack = $('proofTrack');
   const proofFallback = $('proofFallback');
   if (proofTrack) {
     const cards = [...proofTrack.querySelectorAll('.proof-card')];
-    let failed = 0;
+    let unavailable = 0;
+
     cards.forEach((card) => {
       const video = card.querySelector('video');
       if (!video) return;
-      video.addEventListener('error', () => {
-        card.hidden = true;
-        failed += 1;
-        if (failed === cards.length && proofFallback) proofFallback.hidden = false;
-      }, { once: true });
+
+      const fallbackUrl = card.dataset.fallback;
+      const replaceCard = () => {
+        if (fallbackUrl) {
+          const iframe = document.createElement('iframe');
+          iframe.src = fallbackUrl;
+          iframe.title = 'Conteúdo oficial Onnafit';
+          iframe.loading = 'lazy';
+          iframe.allow = 'autoplay; fullscreen; picture-in-picture';
+          iframe.allowFullscreen = true;
+          iframe.className = 'proof-iframe';
+          card.replaceChildren(iframe);
+        } else {
+          card.hidden = true;
+          unavailable += 1;
+          if (unavailable === cards.length && proofFallback) proofFallback.hidden = false;
+        }
+      };
+
+      video.addEventListener('error', replaceCard, { once: true });
+      setTimeout(() => {
+        if (!card.hidden && card.querySelector('video') === video && video.readyState === 0) replaceCard();
+      }, 4500);
     });
   }
 })();
