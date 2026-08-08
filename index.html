@@ -19,7 +19,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/brand-refresh.css">
-  <link rel="preload" as="image" href="assets/hero-product.webp" fetchpriority="high">
+  <link rel="stylesheet" href="css/mobile-preview.css">
+  <link rel="stylesheet" href="css/mobile-tune.css">
+  <link rel="stylesheet" href="css/final-pass.css">
+  <link rel="preload" as="image" href="https://onnafit.com/wp-content/uploads/2026/07/traje-3d_2-1024x1024.webp" fetchpriority="high">
 </head>
 <body>
 
@@ -48,23 +51,28 @@
       </ul>
     </div>
     <div class="hero-visual">
-      <img src="assets/hero-product.webp" alt="Sistema Onnafit: dispositivo EMS, vestimenta e aplicativo" width="640" height="720" fetchpriority="high">
+      <!-- [TEMP HOTLINK] internalizar antes de produ√ß√£o -->
+      <img src="https://onnafit.com/wp-content/uploads/2026/07/traje-3d_2-1024x1024.webp" onerror="this.onerror=null;this.src='assets/hero-product.webp';this.classList.add('media-fallback')" alt="Vestimenta e dispositivo do sistema Onnafit" width="1024" height="1024" fetchpriority="high">
     </div>
   </div>
 </section>
 
 <!-- ================= A NOVA CAMADA + COMPLEMENTARIDADE (fundidas) ================= -->
-<section class="section section-paper" id="camada">
+<section class="section section-paper mobile-thesis" id="camada">
   <div class="container narrow">
     <h2 class="display">A est√©tica corporal n√£o termina onde a pele come√ßa.</h2>
-    <p>Diferentes tecnologias atuam em diferentes estruturas e objetivos est√©ticos.</p>
-    <p class="pre-reveal">Mas existe uma dimens√£o importante para a forma, tonicidade e experi√™ncia corporal que muitas cl√≠nicas ainda exploram pouco:</p>
+    <p class="thesis-bridge">Diferentes tecnologias atuam em diferentes estruturas e objetivos est√©ticos. Mas existe uma dimens√£o importante para a forma, tonicidade e experi√™ncia corporal que muitas cl√≠nicas ainda exploram pouco:</p>
     <p class="display accent-ink reveal-word">a musculatura.</p>
-    <p>Onnafit adiciona o est√≠mulo muscular √† jornada est√©tica.</p>
+    <p class="thesis-close">Onnafit adiciona o est√≠mulo muscular √† jornada est√©tica.</p>
 
     <div class="merge-block">
       <h3 class="display-sm">Voc√™ n√£o precisa substituir aquilo que j√° funciona.</h3>
       <blockquote class="pull-quote">Justamente. Voc√™ j√° possui uma carteira de clientes e um portf√≥lio de tratamentos. Onnafit foi pensado para ampliar aquilo que voc√™ j√° vende.</blockquote>
+      <div class="eco-map" aria-label="O que voc√™ j√° tem e o que o Onnafit adiciona">
+        <div class="eco-row"><span>Carteira existente</span><em>‚Üí</em><strong>nova oferta</strong></div>
+        <div class="eco-row"><span>Portf√≥lio existente</span><em>‚Üí</em><strong>nova dimens√£o</strong></div>
+        <div class="eco-row"><span>Estrutura existente</span><em>‚Üí</em><strong>integra√ß√£o simples</strong></div>
+      </div>
     </div>
 
     <div class="dimensions" aria-label="Dimens√µes da est√©tica">
@@ -77,6 +85,16 @@
   </div>
 </section>
 
+<!-- ================= PAUSA VISUAL ‚Äî imagem real grande ================= -->
+<section class="visual-pause section-paper" aria-label="Onnafit em uso">
+  <!-- [TEMP HOTLINK] internalizar antes de produ√ß√£o -->
+  <img src="https://onnafit.com/wp-content/uploads/2024/02/home-onnafit-remodelacion-corporal-banner.jpg" onerror="this.onerror=null;this.src='assets/hero-product.webp';this.classList.add('media-fallback')" alt="Aplica√ß√£o do sistema Onnafit" loading="lazy" width="1200" height="628">
+  <div class="visual-pause-copy">
+    <p class="eyebrow">Da apar√™ncia ao cuidado cont√≠nuo</p>
+    <p class="display-sm">Uma experi√™ncia que traz a musculatura para dentro da jornada est√©tica.</p>
+  </div>
+</section>
+
 <!-- ================= RECORR√äNCIA + MODELO ECON√îMICO (fundidas) ================= -->
 <section class="section section-dark" id="recorrencia">
   <div class="container">
@@ -84,278 +102,12 @@
     <p class="narrow-p">Muitos tratamentos est√©ticos acontecem de forma pontual e deixam um intervalo natural at√© o pr√≥ximo contato com o cliente. Onnafit permite estruturar programas de sess√µes, criando uma frequ√™ncia diferente de relacionamento com a cl√≠nica.</p>
     <p class="narrow-p lead strong">Um programa de 10 sess√µes n√£o representa apenas uma venda. Representa uma sequ√™ncia de encontros para acompanhar o cliente, fortalecer v√≠nculo e identificar novas oportunidades de cuidado.</p>
 
-    <div class="journey-compare">
+    <div class="journey-compare journey-swipe">
       <div class="journey journey-episodic">
         <h3 class="card-tag">Procedimento</h3>
         <ol class="journey-steps"><li>Cliente realiza</li><li>Retorna posteriormente</li></ol>
       </div>
       <div class="journey journey-program">
         <h3 class="card-tag accent">Programa Onnafit</h3>
-        <ol class="journey-steps"><li>Avalia√ß√£o</li><li>Sess√£o</li><li>Acompanhamento</li><li>Nova sess√£o</li><li>Evolu√ß√£o</li><li>Continuidade</li></ol>
-      </div>
-    </div>
-    <p class="caption center">Amplie a jornada est√©tica do seu cliente: da apar√™ncia ao cuidado cont√≠nuo com o corpo.</p>
-
-    <div class="cards-3">
-      <article class="card"><h3 class="card-tag">Venda em programas</h3><p>Transforme sess√µes em uma jornada estruturada.</p></article>
-      <article class="card"><h3 class="card-tag">Traga o cliente de volta</h3><p>Crie novos pontos de contato ao longo do programa.</p></article>
-      <article class="card"><h3 class="card-tag">Amplie o valor da rela√ß√£o</h3><p>Quanto mais presente a cl√≠nica estiver na jornada, mais oportunidades existem para apresentar outros servi√ßos que fa√ßam sentido para aquele cliente.</p></article>
-    </div>
-
-    <div class="big-statement">
-      <p class="display">Onnafit n√£o adiciona apenas um novo tratamento.</p>
-      <p class="display-sm accent">Ele adiciona uma nova camada √† est√©tica e uma nova frequ√™ncia ao relacionamento com o cliente.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ================= PRODUTO ================= -->
-<section class="section section-paper" id="produto">
-  <div class="container">
-    <h2 class="display">Tecnologia sofisticada.<br><span class="accent-ink">Opera√ß√£o simples.</span></h2>
-    <p class="narrow-p">Onnafit re√∫ne dispositivo EMS wireless, vestimenta e aplicativo em um sistema pensado para o ambiente profissional de est√©tica.</p>
-    <div class="product-grid">
-      <div class="product-visual">
-        <img src="https://onnafit.com/wp-content/uploads/2023/12/onnafit_dansei-1024x1024.png" alt="Sistema oficial Onnafit com vestimenta Dansei e aplicativo" loading="lazy" width="1024" height="1024">
-      </div>
-      <div class="features">
-        <article class="feature"><h3>Wireless e port√°til</h3><p>Compacto, leve e sem cabos durante a aplica√ß√£o.</p></article>
-        <article class="feature"><h3>Hands-free</h3><p>Funciona sem manipula√ß√£o manual cont√≠nua do equipamento.</p></article>
-        <article class="feature"><h3>Controle por aplicativo</h3><p>Intensidade e frequ√™ncia configuradas pelo app, com registro das sess√µes.</p></article>
-        <article class="feature"><h3>Programas guiados</h3><p>Diferentes programas e configura√ß√µes para o uso profissional.</p></article>
-      </div>
-    </div>
-
-    <div class="app-showcase">
-      <div class="app-showcase-copy">
-        <p class="eyebrow">Controle por aplicativo</p>
-        <h3 class="display-sm">Tecnologia na m√£o do profissional.</h3>
-        <p>O aplicativo Onnafit concentra a configura√ß√£o da sess√£o e o controle dos par√¢metros em uma interface desenvolvida para a rotina profissional.</p>
-      </div>
-      <div class="app-showcase-visual">
-        <img src="https://onnafit.com/wp-content/uploads/2024/01/app-movil-onnafit-1024x1024.png" alt="Aplicativo oficial Onnafit exibido em smartphone" loading="lazy" width="900" height="900">
-      </div>
-    </div>
-
-    <div class="video-block video-embed">
-      <p class="caption center">Veja o Onnafit em a√ß√£o ‚Äî v√≠deo oficial da marca</p>
-      <div class="video-frame">
-        <iframe src="https://player.vimeo.com/video/911208600?autopause=0&amp;byline=0&amp;portrait=0&amp;title=0" title="V√≠deo oficial Onnafit" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= COMO FUNCIONA ================= -->
-<section class="section section-paper section-tinted" id="como-funciona">
-  <div class="container">
-    <div class="how-heading"><p class="eyebrow">Experi√™ncia de uso</p><h2 class="display">Da avalia√ß√£o √† sess√£o, na pr√°tica.</h2></div>
-    <div class="how-grid">
-      <div class="how-visual">
-        <img src="https://onnafit.com/wp-content/uploads/2024/01/dispositivo-wireless-onnafit-foto.jpg" alt="Cliente utilizando o sistema Onnafit em ambiente de est√©tica" loading="lazy" width="800" height="800">
-      </div>
-      <div class="steps-3 steps-4">
-        <article class="step"><span class="step-num">01</span><h3>Entenda o objetivo</h3><p>Avalie o cliente e determine a jornada adequada.</p></article>
-        <article class="step"><span class="step-num">02</span><h3>Prepare o sistema</h3><p>Vista o equipamento, conecte o dispositivo e prepare a sess√£o.</p></article>
-        <article class="step"><span class="step-num">03</span><h3>Configure pelo aplicativo</h3><p>Escolha o programa adequado e configure os par√¢metros aplic√°veis.</p></article>
-        <article class="step"><span class="step-num">04</span><h3>Acompanhe a sess√£o</h3><p>Realize o atendimento e acompanhe a experi√™ncia do cliente.</p></article>
-      </div>
-    </div>
-    <div class="center how-cta"><a href="#formulario" class="btn btn-primary" data-cta="como_funciona">Quero conhecer a experi√™ncia Onnafit</a></div>
-  </div>
-</section>
-
-<!-- ================= VERSATILIDADE ‚Äî OCULTA AT√â HOMOLOGA√á√ÉO ==================
-     Se√ß√£o removida at√© que os protocolos brasileiros e respectivos claims estejam homologados.
-============================================================================= -->
-
-<!-- ================= CALCULADORA ================= -->
-<section class="section section-paper" id="calculadora">
-  <div class="container">
-    <h2 class="display">Quanto o Onnafit pode representar na sua opera√ß√£o?</h2>
-    <p class="narrow-p">Comece com um cen√°rio ilustrativo e ajuste os n√∫meros para a realidade da sua cl√≠nica.</p>
-
-    <div class="calc" id="calc">
-      <p class="calc-group-label">Seu neg√≥cio</p>
-      <div class="calc-inputs">
-        <div class="calc-field">
-          <label for="calc-price">Quanto voc√™ pretende cobrar por sess√£o?</label>
-          <div class="calc-input-row">
-            <input type="range" id="calc-price-range" min="120" max="250" step="5" value="150" aria-label="Valor por sess√£o, de 120 a 250 reais">
-            <div class="calc-num"><span>R$</span><input type="number" id="calc-price" min="120" max="250" step="5" value="150" inputmode="numeric" aria-label="Valor por sess√£o, em reais"></div>
-          </div>
-        </div>
-        <div class="calc-field">
-          <label for="calc-programs">Quantos programas pretende vender por m√™s?</label>
-          <div class="calc-input-row">
-            <input type="range" id="calc-programs-range" min="1" max="30" step="1" value="15" aria-label="Programas vendidos por m√™s, de 1 a 30">
-            <div class="calc-num"><input type="number" id="calc-programs" min="1" max="30" step="1" value="15" inputmode="numeric" aria-label="Programas vendidos por m√™s"><span>/m√™s</span></div>
-          </div>
-          <p class="calc-hint">Cada programa considera 10 sess√µes.</p>
-        </div>
-      </div>
-
-      <p class="calc-group-label">Seu cen√°rio</p>
-      <div class="calc-results" aria-live="polite">
-        <div class="result"><span class="result-label">Receita bruta por programa</span><strong id="r-program">R$ 1.500</strong></div>
-        <div class="result"><span class="result-label">Sess√µes por m√™s</span><strong id="r-sessions">150</strong></div>
-        <div class="result result-hero"><span class="result-label">Receita bruta mensal simulada</span><strong id="r-month">R$ 22.500</strong></div>
-      </div>
-      <p class="calc-hint">Receita bruta anualizada do cen√°rio: <strong id="r-year">R$ 270.000</strong></p>
-
-      <div class="calc-divider">
-        <p class="calc-group-label">Seu investimento</p>
-        <h3 class="display-sm">E como isso se compara ao investimento?</h3>
-        <div class="calc-field calc-installment-field">
-          <label for="calc-installment">Parcela mensal considerada</label>
-          <div class="calc-num calc-num-lg"><span>R$</span><input type="number" id="calc-installment" min="500" max="20000" step="50" value="2700" inputmode="numeric" aria-label="Parcela mensal considerada, em reais"></div>
-          <p class="calc-hint">Valor de refer√™ncia utilizado para simula√ß√£o. As condi√ß√µes finais dependem da configura√ß√£o e da proposta comercial vigente. <span class="dev-marker">[PENDENTE: homologar parcela de refer√™ncia e condi√ß√µes comerciais]</span></p>
-        </div>
-      </div>
-
-      <div class="calc-perspective">
-        <p class="calc-group-label">Perspectiva</p>
-        <p class="display-sm" id="p-text">No cen√°rio acima, aproximadamente <strong class="accent-ink">2 programas mensais</strong> geram receita bruta superior ao valor da parcela considerada.</p>
-        <div class="equiv-rows" aria-live="polite">
-          <div class="equiv-row"><span id="p-sessions">18 sess√µes</span><em>=</em><strong id="p-installment">R$ 2.700</strong><small>parcela considerada</small></div>
-          <div class="equiv-row equiv-accent"><span id="p-programs">‚âà 2 programas</span><em>=</em><strong id="p-programs-rev">R$ 3.000</strong><small>receita bruta equivalente</small></div>
-        </div>
-      </div>
-
-      <p class="disclaimer">Simula√ß√£o ilustrativa baseada exclusivamente nas premissas selecionadas. Os valores representam receita bruta e n√£o lucro, margem ou garantia de rentabilidade. Resultados dependem de demanda, pre√ßo praticado, utiliza√ß√£o, tributos, custos, capacidade comercial e execu√ß√£o da opera√ß√£o. Condi√ß√µes de aquisi√ß√£o, entrada, prazo, financiamento e aprova√ß√£o est√£o sujeitas √† proposta comercial vigente.</p>
-    </div>
-
-    <div class="post-calc">
-      <h3 class="display-sm">Faz sentido para a sua opera√ß√£o?</h3>
-      <p class="narrow-p">Conhe√ßa as configura√ß√µes dispon√≠veis, condi√ß√µes de aquisi√ß√£o e veja como Onnafit pode ser incorporado √† realidade da sua cl√≠nica.</p>
-      <a href="#formulario" class="btn btn-primary" data-cta="pos_calculadora">Quero avaliar o Onnafit na minha cl√≠nica</a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= PROVAS / CASES =================
-     Oculto nesta vers√£o de teste at√© a entrega dos depoimentos/cases brasileiros reais.
-     N√£o renderizar placeholders ou v√≠deos ausentes.
-===================================================== -->
-
-<!-- ================= PARA QUEM √â ================= -->
-<section class="section section-paper" id="para-quem">
-  <div class="container">
-    <h2 class="display">Onnafit faz especialmente sentido se voc√™ j√° construiu algo valioso: clientes.</h2>
-    <div class="fit-grid">
-      <div class="fit-col">
-        <h3 class="card-tag">√â para:</h3>
-        <ul class="check-list">
-          <li>cl√≠nicas e centros de est√©tica com carteira ativa;</li><li>medspas;</li><li>espa√ßos premium;</li><li>profissionais com relacionamento recorrente com clientes;</li><li>neg√≥cios que desejam adicionar tecnologia sem exigir uma grande estrutura f√≠sica;</li><li>opera√ß√µes que desejam construir programas e recorr√™ncia.</li>
-        </ul>
-      </div>
-      <div class="fit-col fit-not">
-        <h3 class="card-tag">Talvez n√£o seja para voc√™ se:</h3>
-        <ul class="x-list">
-          <li>procura renda passiva;</li><li>espera que o equipamento gere clientes sozinho;</li><li>n√£o possui opera√ß√£o nem estrat√©gia de aquisi√ß√£o;</li><li>n√£o pretende desenvolver uma nova oferta comercial;</li><li>n√£o pretende acompanhar a jornada do cliente.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= IMPLEMENTA√á√ÉO ================= -->
-<section class="section section-dark" id="implementacao">
-  <div class="container">
-    <h2 class="display">Voc√™ n√£o recebe apenas um equipamento.</h2>
-    <div class="impl-steps">
-      <article class="impl"><h3>Ativa√ß√£o</h3><p>Configura√ß√£o do sistema e acesso aos recursos contratados.</p></article>
-      <article class="impl"><h3>Capacita√ß√£o</h3><p>Treinamento para utiliza√ß√£o correta da tecnologia.</p></article>
-      <article class="impl"><h3>Entrada em opera√ß√£o</h3><p>Orienta√ß√£o para estruturar os primeiros atendimentos.</p></article>
-      <article class="impl"><h3>Suporte</h3><p>Acompanhamento de utiliza√ß√£o conforme a estrutura comercial vigente.</p></article>
-    </div>
-  </div>
-</section>
-
-<!-- ================= FAQ ================= -->
-<section class="section section-paper" id="faq">
-  <div class="container narrow">
-    <h2 class="display">D√∫vidas frequentes</h2>
-    <details class="faq-item"><summary>O Onnafit substitui outros equipamentos est√©ticos?</summary><p>N√£o √© essa a proposta. Onnafit adiciona o est√≠mulo muscular √† jornada corporal e pode coexistir operacionalmente com outros servi√ßos da cl√≠nica, respeitando indica√ß√£o e compatibilidade profissional.</p></details>
-    <details class="faq-item"><summary>Preciso de uma grande estrutura?</summary><p>Onnafit √© compacto, port√°til e wireless, exigindo menos espa√ßo f√≠sico do que equipamentos de grande porte.</p></details>
-    <details class="faq-item"><summary>O sistema possui aplicativo?</summary><p>Sim. O aplicativo permite controlar par√¢metros como intensidade e frequ√™ncia e registra informa√ß√µes relacionadas √†s sess√µes.</p></details>
-    <details class="faq-item"><summary>Posso vender em programas?</summary><p>Sim. A estrutura comercial pode utilizar sess√µes avulsas ou programas, de acordo com a estrat√©gia do neg√≥cio.</p></details>
-    <details class="faq-item"><summary>Quanto custa?</summary><p>Existem diferentes condi√ß√µes e configura√ß√µes comerciais. Como refer√™ncia, determinadas condi√ß√µes de aquisi√ß√£o podem resultar em compromisso mensal pr√≥ximo a <strong>R$ 2.700</strong>. A condi√ß√£o final depende da proposta comercial vigente.</p></details>
-    <details class="faq-item"><summary>Quem pode aplicar?</summary><p>O uso deve respeitar a habilita√ß√£o profissional, legisla√ß√£o aplic√°vel, instru√ß√µes de uso e requisitos do produto. A Lei 13.643/2018 estabelece compet√™ncias relacionadas ao exerc√≠cio profissional de Esteticista e faz refer√™ncia √† utiliza√ß√£o de equipamentos espec√≠ficos de est√©tica regularizados na Anvisa.</p></details>
-    <details class="faq-item"><summary>O produto possui regulariza√ß√£o na Anvisa?</summary><p><span class="dev-marker">[PENDENTE: publicar somente ap√≥s inserir n√∫mero e titular da regulariza√ß√£o espec√≠fica do produto comercializado no Brasil]</span></p><p>A Anvisa disponibiliza consulta p√∫blica para confirma√ß√£o de dispositivos m√©dicos regularizados.</p></details>
-  </div>
-</section>
-
-<!-- ================= FORMUL√ÅRIO ================= -->
-<section class="section section-dark" id="formulario">
-  <div class="container narrow">
-    <h2 class="display">Quero avaliar o Onnafit no meu neg√≥cio</h2>
-    <form id="lead-form" novalidate>
-      <div class="form-progress" aria-hidden="true"><span class="progress-dot active" data-dot="1"></span><span class="progress-dot" data-dot="2"></span><span class="progress-dot" data-dot="3"></span><span class="progress-dot" data-dot="4"></span></div>
-
-      <fieldset class="form-step active" data-step="1">
-        <legend>Contato</legend>
-        <div class="field"><label for="f-nome">Nome</label><input type="text" id="f-nome" name="nome" autocomplete="name" required></div>
-        <div class="field"><label for="f-whatsapp">WhatsApp</label><input type="tel" id="f-whatsapp" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="(00) 00000-0000" required></div>
-        <div class="field"><label for="f-email">E-mail</label><input type="email" id="f-email" name="email" autocomplete="email" required></div>
-        <div class="field"><label for="f-cidade">Cidade/UF</label><input type="text" id="f-cidade" name="cidade_uf" autocomplete="address-level2" required></div>
-      </fieldset>
-
-      <fieldset class="form-step" data-step="2">
-        <legend>Qual descreve melhor sua opera√ß√£o?</legend>
-        <div class="radio-cards" role="radiogroup">
-          <label class="radio-card"><input type="radio" name="operacao" value="Cl√≠nica de est√©tica" required><span>Cl√≠nica de est√©tica</span></label>
-          <label class="radio-card"><input type="radio" name="operacao" value="Medspa / espa√ßo premium"><span>Medspa / espa√ßo premium</span></label>
-          <label class="radio-card"><input type="radio" name="operacao" value="Profissional independente"><span>Profissional independente</span></label>
-          <label class="radio-card"><input type="radio" name="operacao" value="Outro"><span>Outro</span></label>
-        </div>
-      </fieldset>
-
-      <fieldset class="form-step" data-step="3">
-        <legend>Situa√ß√£o atual</legend>
-        <p class="field-label">Voc√™ j√° possui carteira ativa de clientes?</p>
-        <div class="radio-cards" role="radiogroup">
-          <label class="radio-card"><input type="radio" name="carteira" value="Sim" required><span>Sim</span></label>
-          <label class="radio-card"><input type="radio" name="carteira" value="Estou construindo"><span>Estou construindo</span></label>
-          <label class="radio-card"><input type="radio" name="carteira" value="Ainda n√£o"><span>Ainda n√£o</span></label>
-        </div>
-        <p class="field-label">Voc√™ j√° oferece procedimentos corporais?</p>
-        <div class="radio-cards" role="radiogroup">
-          <label class="radio-card"><input type="radio" name="corporais" value="Sim" required><span>Sim</span></label>
-          <label class="radio-card"><input type="radio" name="corporais" value="N√£o"><span>N√£o</span></label>
-        </div>
-      </fieldset>
-
-      <fieldset class="form-step" data-step="4">
-        <legend>Quando pretende implementar uma nova tecnologia?</legend>
-        <div class="radio-cards" role="radiogroup">
-          <label class="radio-card"><input type="radio" name="momento" value="Agora / curto prazo" required><span>Agora / curto prazo</span></label>
-          <label class="radio-card"><input type="radio" name="momento" value="Pr√≥ximos 3 meses"><span>Pr√≥ximos 3 meses</span></label>
-          <label class="radio-card"><input type="radio" name="momento" value="Estou pesquisando"><span>Estou pesquisando</span></label>
-        </div>
-        <p class="privacy-note">Ao enviar, voc√™ concorda que utilizemos seus dados para contato comercial sobre o Onnafit, conforme nossa <a href="#" id="privacy-link">pol√≠tica de privacidade</a>. <span class="dev-marker">[PENDENTE: URL da pol√≠tica de privacidade]</span></p>
-      </fieldset>
-
-      <div class="hp-field" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
-      <div class="form-nav"><button type="button" class="btn btn-ghost" id="form-prev" hidden>‚Üê Voltar</button><button type="button" class="btn btn-primary" id="form-next">Continuar ‚Üí</button><button type="submit" class="btn btn-primary" id="form-submit" hidden>Quero avaliar o Onnafit</button></div>
-      <p class="form-error" id="form-error" role="alert" hidden>Preencha os campos destacados para continuar.</p>
-      <div class="form-fail" id="form-fail" role="alert" hidden><p><strong>N√£o foi poss√≠vel enviar suas informa√ß√µes.</strong> Nada foi perdido ‚Äî verifique sua conex√£o e tente novamente.</p><a href="#" class="btn btn-outline btn-sm" id="whatsapp-fallback" target="_blank" rel="noopener" hidden data-cta="whatsapp_contingencia">Prefiro falar direto no WhatsApp</a></div>
-    </form>
-
-    <div id="form-success" hidden>
-      <h3 class="display">Obrigado.</h3><p>Recebemos suas informa√ß√µes.</p><p>Nossa equipe ir√° avaliar seu perfil para apresentar a configura√ß√£o e o modelo comercial mais adequados √† sua opera√ß√£o.</p><a href="#" class="btn btn-primary" id="whatsapp-btn" target="_blank" rel="noopener" hidden data-cta="whatsapp_final">Falar com especialista no WhatsApp</a>
-    </div>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <img src="assets/onnafit-logo.webp" alt="Onnafit" class="logo" width="110" height="30" loading="lazy">
-    <p class="caption">¬© Onnafit. Todos os direitos reservados. <span class="dev-marker">[PENDENTE: raz√£o social, CNPJ e links de pol√≠tica de privacidade]</span></p>
-  </div>
-</footer>
-
-<div class="sticky-cta" id="sticky-cta" hidden><a href="#formulario" class="btn btn-primary btn-block" data-cta="sticky">Quero avaliar o Onnafit</a></div>
-<script src="js/main.js" defer></script>
-</body>
-</html>
+        <ol class="journey-steps"><l≤»="25…Ω¡ΩÕ—ÑÅçΩµï…ç•Ö∞ÅŸ•ùïπ—î∏Ω¿¯Ωëï—Ö•±Ã¯(ÄÄÄÄÒëï—Ö•±ÃÅç±ÖÕÃÙâôÖƒµ•—ï¥à¯ÒÕ’µµÖ…‰˘E’ï¥Å¡ΩëîÅÖ¡±•çÖ»¸ΩÕ’µµÖ…‰¯Ò¿˘<Å’ÕºÅëïŸîÅ…ïÕ¡ï•—Ö»ÅÑÅ°Öâ•±•—áüçºÅ¡…Ωô•ÕÕ•ΩπÖ∞∞Å±ïù•Õ±áüçºÅÖ¡±•èÖŸï∞∞Å•πÕ—…◊ü’ïÃÅëîÅ’ÕºÅîÅ…ï≈’•Õ•—ΩÃÅëºÅ¡…Ωë’—º∏ÅÅ1ï§ÄƒÃ∏ÿ–Ãº»¿ƒ‡ÅïÕ—Öâï±ïçîÅçΩµ¡ï”©πç•ÖÃÅ…ï±Öç•ΩπÖëÖÃÅÖºÅï·ï…èµç•ºÅ¡…Ωô•ÕÕ•ΩπÖ∞ÅëîÅÕ—ï—•ç•Õ—ÑÅîÅôÖËÅ…ïôïÀ©πç•ÑÉÄÅ’—•±•ÈáüçºÅëîÅï≈’•¡Öµïπ—ΩÃÅïÕ¡ïèµô•çΩÃÅëîÅïÕ”•—•çÑÅ…ïù’±Ö…•ÈÖëΩÃÅπÑÅπŸ•ÕÑ∏Ω¿¯Ωëï—Ö•±Ã¯(ÄÄÄÄÒëï—Ö•±ÃÅç±ÖÕÃÙâôÖƒµ•—ï¥à¯ÒÕ’µµÖ…‰˘<Å¡…Ωë’—ºÅ¡ΩÕÕ’§Å…ïù’±Ö…•ÈáüçºÅπÑÅπŸ•ÕÑ¸ΩÕ’µµÖ…‰¯Ò¿¯ÒÕ¡Ö∏Åç±ÖÕÃÙâëïÿµµÖ…≠ï»à˘mA99QËÅ¡’â±•çÖ»ÅÕΩµïπ—îÅÖ√ÕÃÅ•πÕï…•»ÅªÈµï…ºÅîÅ—•—’±Ö»ÅëÑÅ…ïù’±Ö…•ÈáüçºÅïÕ¡ïèµô•çÑÅëºÅ¡…Ωë’—ºÅçΩµï…ç•Ö±•ÈÖëºÅπºÅ	…ÖÕ•±tΩÕ¡Ö∏¯Ω¿¯Ò¿˘ÅπŸ•ÕÑÅë•Õ¡Ωπ•â•±•ÈÑÅçΩπÕ’±—ÑÅ√Èâ±•çÑÅ¡Ö…ÑÅçΩπô•…µáüçºÅëîÅë•Õ¡ΩÕ•—•ŸΩÃÅ∑•ë•çΩÃÅ…ïù’±Ö…•ÈÖëΩÃ∏Ω¿¯Ωëï—Ö•±Ã¯(ÄÄΩë•ÿ¯(ΩÕïç—•Ω∏¯((Ñ¥¥ÄÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÅ=I5U3I%<ÄÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÄ¥¥¯(ÒÕïç—•Ω∏Åç±ÖÕÃÙâÕïç—•Ω∏ÅÕïç—•Ω∏µëÖ…¨àÅ•êÙâôΩ…µ’±Ö…•ºà¯(ÄÄÒë•ÿÅç±ÖÕÃÙâçΩπ—Ö•πï»ÅπÖ……Ω‹à¯(ÄÄÄÄÒ†»Åç±ÖÕÃÙâë•Õ¡±Ö‰à˘E’ï…ºÅÖŸÖ±•Ö»ÅºÅ=ππÖô•–ÅπºÅµï‘ÅπïüÕç•ºΩ†»¯(ÄÄÄÄÒôΩ…¥Å•êÙâ±ïÖêµôΩ…¥àÅπΩŸÖ±•ëÖ—î¯(ÄÄÄÄÄÄÒë•ÿÅç±ÖÕÃÙâôΩ…¥µ¡…Ωù…ïÕÃàÅÖ…•Ñµ°•ëëï∏Ùâ—…’îà¯ÒÕ¡Ö∏Åç±ÖÕÃÙâ¡…Ωù…ïÕÃµëΩ–ÅÖç—•ŸîàÅëÖ—ÑµëΩ–Ùàƒà¯ΩÕ¡Ö∏¯ÒÕ¡Ö∏Åç±ÖÕÃÙâ¡…Ωù…ïÕÃµëΩ–àÅëÖ—ÑµëΩ–Ùà»à¯ΩÕ¡Ö∏¯ÒÕ¡Ö∏Åç±ÖÕÃÙâ¡…Ωù…ïÕÃµëΩ–àÅëÖ—ÑµëΩ–ÙàÃà¯ΩÕ¡Ö∏¯ÒÕ¡Ö∏Åç±ÖÕÃÙâ¡…Ωù…ïÕÃµëΩ–àÅëÖ—ÑµëΩ–Ùà–à¯ΩÕ¡Ö∏¯Ωë•ÿ¯((ÄÄÄÄÄÄÒô•ï±ëÕï–Åç±ÖÕÃÙâôΩ…¥µÕ—ï¿ÅÖç—•ŸîàÅëÖ—ÑµÕ—ï¿Ùàƒà¯(ÄÄÄÄÄÄÄÄÒ±ïùïπê˘Ωπ—Ö—ºΩ±ïùïπê¯(ÄÄÄÄÄÄÄÄÒë•ÿÅç±ÖÕÃÙâô•ï±êà¯Ò±Öâï∞ÅôΩ»ÙâòµπΩµîà˘9ΩµîΩ±Öâï∞¯Ò•π¡’–Å—Â¡îÙâ—ï·–àÅ•êÙâòµπΩµîàÅπÖµîÙâπΩµîàÅÖ’—ΩçΩµ¡±ï—îÙâπÖµîàÅ…ï≈’•…ïê¯Ωë•ÿ¯(ÄÄÄÄÄÄÄÄÒë•ÿÅç±ÖÕÃÙâô•ï±êà¯Ò±Öâï∞ÅôΩ»Ùâòµ›°Ö—ÕÖ¡¿à˘]°Ö—Õ¡¿Ω±Öâï∞¯Ò•π¡’–Å—Â¡îÙâ—ï∞àÅ•êÙâòµ›°Ö—ÕÖ¡¿àÅπÖµîÙâ›°Ö—ÕÖ¡¿àÅÖ’—ΩçΩµ¡±ï—îÙâ—ï∞àÅ•π¡’—µΩëîÙâ—ï∞àÅ¡±Öçï°Ω±ëï»Ùà†¿¿§Ä¿¿¿¿¿¥¿¿¿¿àÅ…ï≈’•…ïê¯Ωë•ÿ¯(ÄÄÄÄÄÄÄÄÒë•ÿÅç±ÖÕÃÙâô•ï±êà¯Ò±Öâï∞ÅôΩ»ÙâòµïµÖ•∞à˘µµÖ•∞Ω±Öâï∞¯Ò•π¡’–Å—Â¡îÙâïµÖ•∞àÅ•êÙâòµïµÖ•∞àÅπÖµîÙâïµÖ•∞àÅÖ’—ΩçΩµ¡±ï—îÙâïµÖ•∞àÅ…ï≈’•…ïê¯Ωë•ÿ¯(ÄÄÄÄÄÄÄÄÒë•ÿÅç±ÖÕÃÙâô•ï±êà¯Ò±Öâï∞ÅôΩ»Ùâòµç•ëÖëîà˘•ëÖëîΩUΩ±Öâï∞¯Ò•π¡’–Å—Â¡îÙâ—ï·–àÅ•êÙâòµç•ëÖëîàÅπÖµîÙâç•ëÖëï}’òàÅÖ’—ΩçΩµ¡±ï—îÙâÖëë…ïÕÃµ±ïŸï∞»àÅ…ï≈’•…ïê¯Ωë•ÿ¯(ÄÄÄÄÄÄΩô•ï±ëÕï–¯((ÄÄÄÄÄÄÒô•ï±ëÕï–Åç±ÖÕÃÙâôΩ…¥µÕ—ï¿àÅëÖ—ÑµÕ—ï¿Ùà»à¯(ÄÄÄÄÄÄÄÄÒ±ïùïπê˘E’Ö∞ÅëïÕç…ïŸîÅµï±°Ω»ÅÕ’ÑÅΩ¡ï…áüçº¸Ω±ïùïπê¯(ÄÄÄÄÄÄÄÄÒë•ÿÅç±ÖÕÃÙâ…Öë•ºµçÖ…ëÃàÅ…Ω±îÙâ…Öë•Ωù…Ω’¿à¯(ÄÄÄÄÄÄÄÄÄÄÒ±Öâï∞Åç±ÖÕÃÙâ…Öë•ºµçÖ…êà¯Ò•π¡’–Å—Â¡îÙâ…Öë•ºàÅπÖµîÙâΩ¡ï…ÖçÖºàÅŸÖ±’îÙâ≥µπ•çÑÅëîÅïÕ”•—•çÑàÅ…ï≈’•…ïê¯ÒÕ¡Ö∏˘≥µπ•çÑÅëîÅïÕ”•—•çÑΩÕ¡Ö∏¯Ω±Öâï∞¯(ÄÄÄÄÄÄÄÄÄÄÒ±Öâï∞Åç±ÖÕÃÙâ…Öë•ºµçÖ…êà¯Ò•π¡’–Å—Â¡îÙâ…Öë•ºàÅπÖµîÙâΩ¡ï…ÖçÖºàÅŸÖ±’îÙâ5ïëÕ¡ÑÄºÅïÕ¡áùºÅ¡…ïµ•’¥à¯ÒÕ¡Ö∏˘5ïëÕ¡ÑÄºÅïÕ¡áùºÅ¡…ïµ•’¥ΩÕ¡Ö∏¯Ω±Öâï∞¯(ÄÄÄÄÄÄÄÄÄÄÒ±Öâï∞Åç±ÖÕÃÙâ…Öë•ºµçÖ…êà¯Ò•π¡’–Å—Â¡îÙâ…Öë•ºàÅπÖµîÙâΩ¡ï…ÖçÖºàÅŸÖ±’îÙâA…Ωô•ÕÕ•ΩπÖ∞Å•πëï¡ïπëïπ—îà¯ÒÕ¡Ö∏˘A…Ωô•ÕÕ•ΩπÖ∞Å•πëï¡ïπëïπ—îΩÕ¡Ö∏¯Ω±Öâï∞¯(ÄÄÄÄÄÄÄÄÄÄÒ±Öâï∞Åç±ÖÕÃÙâ…Öë•ºµçÖ…êà¯Ò•π¡’–Å—Â¡îÙâ…Öë•ºàÅπÖµîÙâΩ¡ï…ÖçÖºàÅŸÖ±’îÙâ=’—…ºà¯ÒÕ¡Ö∏˘=’—…ºΩÕ¡Ö∏¯Ω±Öâï∞¯(ÄÄÄÄÄÄÄÄΩë•ÿ¯(ÄÄÄÄÄÄΩô•ï±ëÕï–¯((ÄÄÄÄÄÄÒô•ï±ëÕï–Åç±ÖÕÃÙâôΩ…¥µÕ—ï¿àÅëÖ—ÑµÕ—ï¿ÙàÃà¯(ÄÄÄÄÄÄÄÄÒ±ïùïπê˘M•—’áüçºÅÖ—’Ö∞Ω±ïùïπê¯(ÄÄÄÄÄÄÄÄÒ¿Åç±ÖÕÃÙâô•ï±êµ±Öâï∞à˘YΩè®Å´ÑÅ¡ΩÕÕ’§ÅçÖ…—ï•…ÑÅÖ—•ŸÑÅëîÅç±•ïπ—ïÃ¸Ω¿¯(ÄÄÄÄÄÄÄÄÒë•ÿÅç±ÖÕÃÙâ…Öë•ºµçÖ…ëÃàÅ…Ω±îÙâ…Öë•Ωù…Ω’¿à¯(ÄÄÄÄÄÄÄÄÄÄÒ±Öâï∞Åç±ÖÕÃÙâ…Öë•ºµçÖ…êà¯Ò•π¡’–Å—Â¡îÙâ…Öë•ºàÅπÖµîÙâçÖ…—ï•…ÑàÅŸÖ±’îÙâM•¥àÅ…ï≈’•…ïê¯ÒÕ¡Ö∏˘M•¥ΩÕ¡Ö∏¯Ω±Öâï∞¯(ÄÄÄÄÄÄÄÄÄÄÒ±Öâï∞Åç±ÖÕÃÙâ…Öë•ºµçÖ…êà¯Ò•π¡’–Å—Â¡îÙâ…Öë•ºàÅπÖµîÙâçÖ…—ï•…ÑàÅŸÖ±’îÙâÕ—Ω‘ÅçΩπÕ—…’•πëºà¯ÒÕ¡Ö∏˘Õ—Ω‘ÅçΩπÕ—…’•πëºΩÕ¡Ö∏¯Ω±Öâï∞¯(ÄÄÄÄÄÄÄÄÄÄÒ±Öâï∞Åç±ÖÕÃÙâ…Öë•ºµçÖ…êà¯Ò•π¡’–Å—Â¡îÙâ…Öë•ºàÅπÖµîÙâçÖ…—ï•…ÑàÅŸÖ±’îÙâ•πëÑÅªçºà¯ÒÕ¡Ö∏˘•πëÑÅªçºΩÕ¡Ö∏¯Ω±Öâï∞¯(ÄÄÄÄÄÄÄÄΩë•ÿ¯(ÄÄÄÄÄÄÄÄÒ¿Åç±ÖÕÃÙâô•ï±êµ±Öâï∞à˘YΩè®Å´ÑÅΩôï…ïçîÅ¡…Ωçïë•µïπ—ΩÃÅçΩ…¡Ω…Ö•Ã¸Ω¿¯(ÄÄÄÄÄÄÄÄÒë•ÿÅç±ÖÕÃÙâ…Öë•ºµçÖ…ëÃàÅ…Ω±îÙâ…Öë•Ωù…Ω’¿à¯(ÄÄÄÄÄÄÄÄÄÄÒ±Öâï∞Åç±ÖÕÃÙâ…Öë•ºµçÖ…êà¯Ò•π¡’–Å—Â¡îÙâ…Öë•ºàÅπÖµîÙâçΩ…¡Ω…Ö•ÃàÅŸÖ±’îÙâM•¥àÅ…ï≈’•…ïê¯ÒÕ¡Ö∏˘M•¥ΩÕ¡Ö∏¯Ω±Öâï∞¯(ÄÄÄÄÄÄÄÄÄÄÒ±Öâï∞Åç±ÖÕÃÙâ…Öë•ºµçÖ…êà¯Ò•π¡’–Å—Â¡îÙâ…Öë•ºàÅπÖµîÙâçΩ…¡Ω…Ö•ÃàÅŸÖ±’îÙâ;çºà¯ÒÕ¡Ö∏˘;çºΩÕ¡Ö∏¯Ω±Öâï∞¯(ÄÄÄÄÄÄÄÄΩë•ÿ¯(ÄÄÄÄÄÄΩô•ï±ëÕï–¯((ÄÄÄÄÄÄÒô•ï±ëÕï–Åç±ÖÕÃÙâôΩ…¥µÕ—ï¿àÅëÖ—ÑµÕ—ï¿Ùà–à¯(ÄÄÄÄÄÄÄÄÒ±ïùïπê˘E’ÖπëºÅ¡…ï—ïπëîÅ•µ¡±ïµïπ—Ö»Å’µÑÅπΩŸÑÅ—ïçπΩ±Ωù•Ñ¸Ω±ïùïπê¯(ÄÄÄÄÄÄÄÄÒë•ÿÅç±ÖÕÃÙâ…Öë•ºµçÖ…ëÃàÅ…Ω±îÙâ…Öë•Ωù…Ω’¿à¯(ÄÄÄÄÄÄÄÄÄÄÒ±Öâï∞Åç±ÖÕÃÙâ…Öë•ºµçÖ…êà¯Ò•π¡’–Å—Â¡îÙâ…Öë•ºàÅπÖµîÙâµΩµïπ—ºàÅŸÖ±’îÙâùΩ…ÑÄºÅç’…—ºÅ¡…ÖÈºàÅ…ï≈’•…ïê¯ÒÕ¡Ö∏˘ùΩ…ÑÄºÅç’…—ºÅ¡…ÖÈºΩÕ¡Ö∏¯Ω±Öâï∞¯(ÄÄÄÄÄÄÄÄÄÄÒ±Öâï∞Åç±ÖÕÃÙâ…Öë•ºµçÖ…êà¯Ò•π¡’–Å—Â¡îÙâ…Öë•ºàÅπÖµîÙâµΩµïπ—ºàÅŸÖ±’îÙâAÀÕ·•µΩÃÄÃÅµïÕïÃà¯ÒÕ¡Ö∏˘AÀÕ·•µΩÃÄÃÅµïÕïÃΩÕ¡Ö∏¯Ω±Öâï∞¯(ÄÄÄÄÄÄÄÄÄÄÒ±Öâï∞Åç±ÖÕÃÙâ…Öë•ºµçÖ…êà¯Ò•π¡’–Å—Â¡îÙâ…Öë•ºàÅπÖµîÙâµΩµïπ—ºàÅŸÖ±’îÙâÕ—Ω‘Å¡ïÕ≈’•ÕÖπëºà¯ÒÕ¡Ö∏˘Õ—Ω‘Å¡ïÕ≈’•ÕÖπëºΩÕ¡Ö∏¯Ω±Öâï∞¯(ÄÄÄÄÄÄÄÄΩë•ÿ¯(ÄÄÄÄÄÄÄÄÒ¿Åç±ÖÕÃÙâ¡…•ŸÖç‰µπΩ—îà˘ºÅïπŸ•Ö»∞ÅŸΩè®ÅçΩπçΩ…ëÑÅ≈’îÅ’—•±•ÈïµΩÃÅÕï’ÃÅëÖëΩÃÅ¡Ö…ÑÅçΩπ—Ö—ºÅçΩµï…ç•Ö∞ÅÕΩâ…îÅºÅ=ππÖô•–∞ÅçΩπôΩ…µîÅπΩÕÕÑÄÒÑÅ°…ïòÙàåàÅ•êÙâ¡…•ŸÖç‰µ±•π¨à˘¡Ω≥µ—•çÑÅëîÅ¡…•ŸÖç•ëÖëîΩÑ¯∏ÄÒÕ¡Ö∏Åç±ÖÕÃÙâëïÿµµÖ…≠ï»à˘mA99QËÅUI0ÅëÑÅ¡Ω≥µ—•çÑÅëîÅ¡…•ŸÖç•ëÖëïtΩÕ¡Ö∏¯Ω¿¯(ÄÄÄÄÄÄΩô•ï±ëÕï–¯((ÄÄÄÄÄÄÒë•ÿÅç±ÖÕÃÙâ°¿µô•ï±êàÅÖ…•Ñµ°•ëëï∏Ùâ—…’îà¯Ò±Öâï∞˘]ïâÕ•—îÒ•π¡’–Å—Â¡îÙâ—ï·–àÅπÖµîÙâ›ïâÕ•—îàÅ—Öâ•πëï‡Ùà¥ƒàÅÖ’—ΩçΩµ¡±ï—îÙâΩôòà¯Ω±Öâï∞¯Ωë•ÿ¯(ÄÄÄÄÄÄÒë•ÿÅç±ÖÕÃÙâôΩ…¥µπÖÿà¯Òâ’——Ω∏Å—Â¡îÙââ’——Ω∏àÅç±ÖÕÃÙââ—∏Åâ—∏µù°ΩÕ–àÅ•êÙâôΩ…¥µ¡…ïÿàÅ°•ëëï∏˚ä@ÅYΩ±—Ö»Ωâ’——Ω∏¯Òâ’——Ω∏Å—Â¡îÙââ’——Ω∏àÅç±ÖÕÃÙââ—∏Åâ—∏µ¡…•µÖ…‰àÅ•êÙâôΩ…¥µπï·–à˘Ωπ—•π’Ö»ÉäHΩâ’——Ω∏¯Òâ’——Ω∏Å—Â¡îÙâÕ’âµ•–àÅç±ÖÕÃÙââ—∏Åâ—∏µ¡…•µÖ…‰àÅ•êÙâôΩ…¥µÕ’âµ•–àÅ°•ëëï∏˘E’ï…ºÅÖŸÖ±•Ö»ÅºÅ=ππÖô•–Ωâ’——Ω∏¯Ωë•ÿ¯(ÄÄÄÄÄÄÒ¿Åç±ÖÕÃÙâôΩ…¥µï……Ω»àÅ•êÙâôΩ…¥µï……Ω»àÅ…Ω±îÙâÖ±ï…–àÅ°•ëëï∏˘A…ïïπç°ÑÅΩÃÅçÖµ¡ΩÃÅëïÕ—ÖçÖëΩÃÅ¡Ö…ÑÅçΩπ—•π’Ö»∏Ω¿¯(ÄÄÄÄÄÄÒë•ÿÅç±ÖÕÃÙâôΩ…¥µôÖ•∞àÅ•êÙâôΩ…¥µôÖ•∞àÅ…Ω±îÙâÖ±ï…–àÅ°•ëëï∏¯Ò¿¯ÒÕ—…Ωπú˘;çºÅôΩ§Å¡ΩÕœµŸï∞ÅïπŸ•Ö»ÅÕ’ÖÃÅ•πôΩ…µáü’ïÃ∏ΩÕ—…Ωπú¯Å9ÖëÑÅôΩ§Å¡ï…ë•ëºÉäPÅŸï…•ô•≈’îÅÕ’ÑÅçΩπï„çºÅîÅ—ïπ—îÅπΩŸÖµïπ—î∏Ω¿¯ÒÑÅ°…ïòÙàåàÅç±ÖÕÃÙââ—∏Åâ—∏µΩ’—±•πîÅâ—∏µÕ¥àÅ•êÙâ›°Ö—ÕÖ¡¿µôÖ±±âÖç¨àÅ—Ö…ùï–Ùâ}â±Öπ¨àÅ…ï∞ÙâπΩΩ¡ïπï»àÅ°•ëëï∏ÅëÖ—Ñµç—ÑÙâ›°Ö—ÕÖ¡¡}çΩπ—•πùïπç•Ñà˘A…ïô•…ºÅôÖ±Ö»Åë•…ï—ºÅπºÅ]°Ö—Õ¡¿ΩÑ¯Ωë•ÿ¯(ÄÄÄÄΩôΩ…¥¯((ÄÄÄÄÒë•ÿÅ•êÙâôΩ…¥µÕ’ççïÕÃàÅ°•ëëï∏¯(ÄÄÄÄÄÄÒ†ÃÅç±ÖÕÃÙâë•Õ¡±Ö‰à˘=â…•ùÖëº∏Ω†Ã¯Ò¿˘IïçïâïµΩÃÅÕ’ÖÃÅ•πôΩ…µáü’ïÃ∏Ω¿¯Ò¿˘9ΩÕÕÑÅï≈’•¡îÅ•ÀÑÅÖŸÖ±•Ö»ÅÕï‘Å¡ï…ô•∞Å¡Ö…ÑÅÖ¡…ïÕïπ—Ö»ÅÑÅçΩπô•ù’…áüçºÅîÅºÅµΩëï±ºÅçΩµï…ç•Ö∞ÅµÖ•ÃÅÖëï≈’ÖëΩÃÉÄÅÕ’ÑÅΩ¡ï…áüçº∏Ω¿¯ÒÑÅ°…ïòÙàåàÅç±ÖÕÃÙââ—∏Åâ—∏µ¡…•µÖ…‰àÅ•êÙâ›°Ö—ÕÖ¡¿µâ—∏àÅ—Ö…ùï–Ùâ}â±Öπ¨àÅ…ï∞ÙâπΩΩ¡ïπï»àÅ°•ëëï∏ÅëÖ—Ñµç—ÑÙâ›°Ö—ÕÖ¡¡}ô•πÖ∞à˘Ö±Ö»ÅçΩ¥ÅïÕ¡ïç•Ö±•Õ—ÑÅπºÅ]°Ö—Õ¡¿ΩÑ¯(ÄÄÄÄΩë•ÿ¯(ÄÄΩë•ÿ¯(ΩÕïç—•Ω∏¯((ÒôΩΩ—ï»Åç±ÖÕÃÙâÕ•—îµôΩΩ—ï»à¯(ÄÄÒë•ÿÅç±ÖÕÃÙâçΩπ—Ö•πï»ÅôΩΩ—ï»µ•ππï»à¯(ÄÄÄÄÒ•µúÅÕ…åÙâÖÕÕï—ÃΩΩππÖô•–µ±Ωùºπ›ïâ¿àÅÖ±–Ùâ=ππÖô•–àÅç±ÖÕÃÙâ±ΩùºàÅ›•ë—†Ùàƒƒ¿àÅ°ï•ù°–ÙàÃ¿àÅ±ΩÖë•πúÙâ±ÖÈ‰à¯(ÄÄÄÄÒ¿Åç±ÖÕÃÙâçÖ¡—•Ω∏à˚
+§Å=ππÖô•–∏ÅQΩëΩÃÅΩÃÅë•…ï•—ΩÃÅ…ïÕï…ŸÖëΩÃ∏ÄÒÕ¡Ö∏Åç±ÖÕÃÙâëïÿµµÖ…≠ï»à˘mA99QËÅ…ÖÎçºÅÕΩç•Ö∞∞Å9A(ÅîÅ±•π≠ÃÅëîÅ¡Ω≥µ—•çÑÅëîÅ¡…•ŸÖç•ëÖëïtΩÕ¡Ö∏¯Ω¿¯(ÄÄΩë•ÿ¯(ΩôΩΩ—ï»¯((Òë•ÿÅç±ÖÕÃÙâÕ—•ç≠‰µç—ÑàÅ•êÙâÕ—•ç≠‰µç—ÑàÅ°•ëëï∏¯ÒÑÅ°…ïòÙàçôΩ…µ’±Ö…•ºàÅç±ÖÕÃÙââ—∏Åâ—∏µ¡…•µÖ…‰Åâ—∏µâ±Ωç¨àÅëÖ—Ñµç—ÑÙâÕ—•ç≠‰à˘E’ï…ºÅÖŸÖ±•Ö»ÅºÅ=ππÖô•–ΩÑ¯Ωë•ÿ¯(ÒÕç…•¡–ÅÕ…åÙâ©ÃΩµÖ•∏π©ÃàÅëïôï»¯ΩÕç…•¡–¯((ÒÕç…•¡–¯(††§ÄÙ¯ÅÏ(ÄÅçΩπÕ–Å°•ëïÖ•±ïëY•ëïºÄÙÄ°Ÿ•ëïº§ÄÙ¯ÅÏ(ÄÄÄÅçΩπÕ–ÅçÖ…êÄÙÅŸ•ëïºπç±ΩÕïÕ–†úπ¡…ΩΩòµçÖ…êú§Ï(ÄÄÄÅ•òÄ°çÖ…ê§ÅÏ(ÄÄÄÄÄÅçÖ…êπ°•ëëï∏ÄÙÅ—…’îÏ(ÄÄÄÄÄÅçΩπÕ–Å—…Öç¨ÄÙÅçÖ…êπç±ΩÕïÕ–†úπ¡…ΩΩòµ—…Öç¨ú§Ï(ÄÄÄÄÄÅ•òÄ°—…Öç¨ÄòòÄÖl∏∏π—…Öç¨πç°•±ë…ïπtπÕΩµî°ï∞ÄÙ¯ÄÖï∞π°•ëëï∏§§ÅÏ(ÄÄÄÄÄÄÄÅçΩπÕ–ÅÕïç—•Ω∏ÄÙÅ—…Öç¨πç±ΩÕïÕ–†úπ¡…ΩΩòµÕïç—•Ω∏ú§Ï(ÄÄÄÄÄÄÄÅ•òÄ°Õïç—•Ω∏§ÅÕïç—•Ω∏π°•ëëï∏ÄÙÅ—…’îÏ(ÄÄÄÄÄÅÙ(ÄÄÄÄÄÅ…ï—’…∏Ï(ÄÄÄÅÙ(ÄÄÄÅçΩπÕ–ÅÕïç—•Ω∏ÄÙÅŸ•ëïºπç±ΩÕïÕ–†úπŸ•ëïºµÕïç—•Ω∏ú§Ï(ÄÄÄÅ•òÄ°Õïç—•Ω∏§ÅÕïç—•Ω∏π°•ëëï∏ÄÙÅ—…’îÏ(ÄÅÙÏ(ÄÅëΩç’µïπ–π≈’ï…ÂMï±ïç—Ω…±∞†ùŸ•ëïºú§πôΩ…Öç†°Ÿ•ëïºÄÙ¯ÅÏ(ÄÄÄÅŸ•ëïºπÖëëŸïπ—1•Õ—ïπï»†ùï……Ω»ú∞Ä†§ÄÙ¯Å°•ëïÖ•±ïëY•ëïº°Ÿ•ëïº§§Ï(ÄÄÄÅŸ•ëïºπ≈’ï…ÂMï±ïç—Ω…±∞†ùÕΩ’…çîú§πôΩ…Öç†°ÕΩ’…çîÄÙ¯ÅÕΩ’…çîπÖëëŸïπ—1•Õ—ïπï»†ùï……Ω»ú∞Ä†§ÄÙ¯Å°•ëïÖ•±ïëY•ëïº°Ÿ•ëïº§§§Ï(ÄÅÙ§Ï)Ù§†§Ï(ΩÕç…•¡–¯(ΩâΩë‰¯(Ω°—µ∞¯(
