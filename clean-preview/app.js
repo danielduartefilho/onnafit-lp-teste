@@ -50,4 +50,29 @@
   installmentInput.addEventListener('input', render);
   installmentInput.addEventListener('blur', render);
   render();
+
+  const institutionalVideo = $('institutionalVideo');
+  const institutionalFallback = $('institutionalFallback');
+  if (institutionalVideo && institutionalFallback) {
+    institutionalVideo.addEventListener('error', () => {
+      institutionalVideo.hidden = true;
+      institutionalFallback.hidden = false;
+    }, { once: true });
+  }
+
+  const proofTrack = $('proofTrack');
+  const proofFallback = $('proofFallback');
+  if (proofTrack) {
+    const cards = [...proofTrack.querySelectorAll('.proof-card')];
+    let failed = 0;
+    cards.forEach((card) => {
+      const video = card.querySelector('video');
+      if (!video) return;
+      video.addEventListener('error', () => {
+        card.hidden = true;
+        failed += 1;
+        if (failed === cards.length && proofFallback) proofFallback.hidden = false;
+      }, { once: true });
+    });
+  }
 })();
