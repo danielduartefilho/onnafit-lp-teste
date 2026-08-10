@@ -86,3 +86,34 @@ if (conv && "IntersectionObserver" in window) {
     document.body.classList.toggle("at-form", entry.isIntersecting);
   }, { threshold: 0.05 }).observe(conv);
 }
+
+// Calculadora de viabilidade
+(function () {
+  const clients = document.getElementById("calcClients");
+  const program = document.getElementById("calcProgram");
+  const installment = document.getElementById("calcInstallment");
+  const revenueEl = document.getElementById("calcRevenue");
+  const deltaEl = document.getElementById("calcDelta");
+  const breakEvenEl = document.getElementById("calcBreakEven");
+  if (!clients || !program || !installment || !revenueEl || !deltaEl || !breakEvenEl) return;
+
+  const money = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL", maximumFractionDigits: 0 });
+  const num = (el) => Math.max(0, Number(el.value || 0));
+
+  function renderCalc() {
+    const c = num(clients);
+    const p = num(program);
+    const i = num(installment);
+    const revenue = c * p;
+    const delta = revenue - i;
+    const breakEven = p > 0 ? Math.ceil(i / p) : 0;
+    revenueEl.textContent = money.format(revenue);
+    deltaEl.textContent = (delta >= 0 ? "+ " : "- ") + money.format(Math.abs(delta));
+    deltaEl.classList.toggle("negative", delta < 0);
+    breakEvenEl.textContent = String(breakEven);
+    track("calculator_scenario", { clients: c, program_value: p, installment: i, revenue: revenue });
+  }
+
+  [clients, program, installment].forEach((el) => el.addEventListener("input", renderCalc));
+  renderCalc();
+})();
