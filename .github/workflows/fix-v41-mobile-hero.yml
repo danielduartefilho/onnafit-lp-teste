@@ -16,14 +16,7 @@ jobs:
         run: |
           set -euo pipefail
           test -f final-v4.1/styles.css
-          cat >> final-v4.1/styles.css <<'EOF'
-
-/* Mobile hero: use intrinsic image ratio to prevent stretching in mobile browsers */
-@media (max-width:560px){
-  .hero-product{aspect-ratio:auto!important;height:auto!important;display:block;width:100%;max-width:100%;}
-  .hero-product img{display:block;width:100%!important;height:auto!important;max-height:none!important;aspect-ratio:auto!important;object-fit:contain!important;object-position:center!important;transform:none!important;}
-}
-EOF
+          printf '%s\n' '' '/* Mobile hero: use intrinsic image ratio to prevent stretching in mobile browsers */' '@media (max-width:560px){' '  .hero-product{aspect-ratio:auto!important;height:auto!important;display:block;width:100%;max-width:100%;}' '  .hero-product img{display:block;width:100%!important;height:auto!important;max-height:none!important;aspect-ratio:auto!important;object-fit:contain!important;object-position:center!important;transform:none!important;}' '}' >> final-v4.1/styles.css
           git diff --check
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
