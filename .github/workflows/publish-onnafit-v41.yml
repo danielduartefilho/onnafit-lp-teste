@@ -1,0 +1,40 @@
+name: Publish Onnafit V4.1
+
+on:
+  push:
+    branches: [publish-v41-mobile]
+    paths:
+      - 'publish-parts/**'
+      - '.github/workflows/publish-onnafit-v41.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Build optimized V4.1
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p final-v4.1/assets
+          cat publish-parts/index/*.txt | base64 -d > final-v4.1/index.html
+          cat publish-parts/css/*.txt | base64 -d > final-v4.1/styles.css
+          cat publish-parts/js/*.txt | base64 -d > final-v4.1/app.js
+          cp final-v3/assets/hero-product.webp final-v4.1/assets/hero-product.webp
+          cp final-v3/assets/onnafit-logo.webp final-v4.1/assets/onnafit-logo.webp
+          echo '175dc0145d26c9da6362ef44d231d5b705b75fb9bacee33a037f3a9713203372  final-v4.1/index.html' | sha256sum -c -
+          echo '2810d6f603518335d54b35d4f6f4702e9093cb9c5c366a3d92e121146a099517  final-v4.1/styles.css' | sha256sum -c -
+          echo '75e6f18619d79066760263f6add21f0f7e07bc8f2ce667b6263b6b3a1dfd1718  final-v4.1/app.js' | sha256sum -c -
+          node --check final-v4.1/app.js
+          rm -rf publish-parts
+          rm -f .github/workflows/publish-onnafit-v41.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Publish Onnafit v4.1 mobile-optimized'
+          git push origin HEAD:publish-v41-mobile
