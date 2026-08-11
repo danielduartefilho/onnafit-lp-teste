@@ -17,14 +17,7 @@ jobs:
           set -euo pipefail
           test -f final-v4.1/styles.css
           test -f final-v4.1/assets/hero-product.webp
-          cat >> final-v4.1/styles.css <<'EOF'
-
-/* Hero image integrity: keep source proportions on desktop and mobile */
-.hero-product{aspect-ratio:1/1;display:grid;place-items:center;align-self:center}
-.hero-product img{width:100%;height:100%;object-fit:contain;object-position:center;transform:scale(1.02)}
-@media (max-width:850px){.hero-product{width:min(100%,620px)}}
-@media (max-width:560px){.hero-product{width:100%;max-width:100%}.hero-product img{transform:none}}
-EOF
+          printf '%s\n' '' '/* Hero image integrity: keep source proportions on desktop and mobile */' '.hero-product{aspect-ratio:1/1;display:grid;place-items:center;align-self:center}' '.hero-product img{width:100%;height:100%;object-fit:contain;object-position:center;transform:scale(1.02)}' '@media (max-width:850px){.hero-product{width:min(100%,620px)}}' '@media (max-width:560px){.hero-product{width:100%;max-width:100%}.hero-product img{transform:none}}' >> final-v4.1/styles.css
           git diff --check
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
